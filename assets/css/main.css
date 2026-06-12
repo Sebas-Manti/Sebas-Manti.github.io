@@ -264,6 +264,14 @@ th {
 /* ==========================================================================
    HOME HERO
    ========================================================================== */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.75rem;
+}
+
 .home-hero {
   padding: 4rem 0 3rem;
   border-bottom: 1px solid var(--border-light);

@@ -6,13 +6,14 @@ title: Home
 
   <!-- ── Hero ─────────────────────────────────────────────────── -->
   <section class="home-hero">
+    <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="{{ site.title }}" class="profile-photo">
     <h1 class="home-hero__name">{{ site.title }}</h1>
     <p class="home-hero__tagline">{{ site.tagline }}</p>
     <p class="home-hero__about">
-      Mathematician working on stochastic partial differential equations.
-      This site is where I write about mathematics, share projects, and
-      collect things I find interesting.
-      <!-- ↑ Replace with your own words -->
+      I'm a mathematician working on stochastic partial differential
+      equations, problems where randomness breaks the classical tools and you
+      need new language just to state what a solution should mean. I also make
+      simulations, read essays, and ask more questions than I answer.
     </p>
     <div class="home-hero__social">
       {% if site.email %}

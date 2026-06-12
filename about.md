@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/img/profile.png" alt="Sebastian Mantilla" style="width:150px; border-radius:50%; margin-bottom:2rem;">
+<img src="/assets/img/profile.png" alt="Sebastian Mantilla" class="profile-photo">
 
 I'm finishing a mathematics degree while working as a data engineer; which means I spend my days inside enterprise data systems and my evenings trying to make sense of equations that are, formally, undefined.
 My mathematical interests center on stochastic partial differential equations: problems where randomness and continuous fields interact in ways that break classical intuition, where you sometimes need to build new language just to state what a solution should mean. I'm also interested in high-performance simulation and have a paper in computational geometry.

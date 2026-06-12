@@ -8,10 +8,10 @@ url:         "https://Sebas-Manti.github.io"
 # Fill in your handles (leave blank to hide a link)
 email:              "contact.sebas.manti@gmail.com"
 github_username:    "Sebas-Manti"
-orcid:              "https://orcid.org/0009-0001-4956-040X"          
-linkedin_username:  "https://www.linkedin.com/in/sebastian-mantilla/"          
-instagram_username: "https://www.instagram.com/sebastian_manti/"          
-bluesky_handle:     "https://bsky.app/profile/sebas-manti.bsky.social"
+orcid:              "0009-0001-4956-040X"
+linkedin_username:  "sebastian-mantilla"
+instagram_username: "sebastian_manti"
+bluesky_handle:     "sebas-manti.bsky.social"
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 markdown:    kramdown
