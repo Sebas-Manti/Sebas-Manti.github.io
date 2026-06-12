@@ -1,0 +1,20 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}" class="site-nav__logo">{{ site.title }}</a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" aria-hidden="true">
+        <rect y="0"  width="20" height="2" rx="1"/>
+        <rect y="6"  width="20" height="2" rx="1"/>
+        <rect y="12" width="20" height="2" rx="1"/>
+      </svg>
+    </button>
+
+    <ul class="site-nav__links" id="nav-links" role="list">
+      <li><a href="{{ '/about'       | relative_url }}"{% if page.url == '/about/'       %} class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/research'    | relative_url }}"{% if page.url == '/research/'    %} class="active"{% endif %}>Research</a></li>
+      <li><a href="{{ '/blog'        | relative_url }}"{% if page.url contains '/blog'   %} class="active"{% endif %}>Blog</a></li>
+      <li><a href="{{ '/discoveries' | relative_url }}"{% if page.url == '/discoveries/' %} class="active"{% endif %}>Discoveries</a></li>
+    </ul>
+  </nav>
+</header>

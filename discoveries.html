@@ -1,0 +1,30 @@
+---
+layout: default
+title: Discoveries
+permalink: /discoveries/
+---
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Discoveries</h1>
+    <p class="page-header__subtitle">Things I find worth reading, watching, or thinking about.</p>
+  </div>
+
+  {% if site.data.discoveries %}
+  <ul class="discovery-list">
+    {% for item in site.data.discoveries %}
+    <li class="discovery-item">
+      <span class="discovery-item__date">{{ item.date }}</span>
+      <a class="discovery-item__title"
+         href="{{ item.url }}"
+         target="_blank"
+         rel="noopener noreferrer">{{ item.title }}</a>
+      {% if item.note %}
+      <p class="discovery-item__note">{{ item.note }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color: var(--text-muted); font-style: italic;">Nothing here yet.</p>
+  {% endif %}
+</div>

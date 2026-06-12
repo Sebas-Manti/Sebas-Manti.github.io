@@ -1,0 +1,21 @@
+# Discoveries — curated links
+# Format:
+#   - date:  "Mon YYYY"
+#     title: "Link title"
+#     url:   "https://..."
+#     note:  "One sentence on why it's interesting."  # optional
+
+- date: "Jun 2026"
+  title: "An Introduction to Stochastic PDEs — Martin Hairer"
+  url: "https://www.hairer.org/SPDEs.pdf"
+  note: "The best entry point into the subject. Hairer's lecture notes are dense but extremely well-written."
+
+- date: "Jun 2026"
+  title: "Paracontrolled Distributions and Singular PDEs — Gubinelli, Imkeller, Perkowski"
+  url: "https://arxiv.org/abs/1210.2684"
+  note: "An alternative approach to singular SPDEs via paraproducts, worth reading alongside Hairer's regularity structures."
+
+- date: "Jun 2026"
+  title: "3Blue1Brown — But what is a partial differential equation?"
+  url: "https://www.youtube.com/watch?v=ly4S0oi3Yz8"
+  note: "Exceptional visual intuition for PDEs. Useful to share with anyone new to the subject."

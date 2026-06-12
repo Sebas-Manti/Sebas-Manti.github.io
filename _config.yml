@@ -1,0 +1,37 @@
+title:       "Sebastián Mantilla Zuluaga"
+tagline:     "Mathematician — Stochastic PDEs"
+description: "Personal site and blog. Mathematics, stochastic PDEs, and things I find interesting."
+baseurl:     ""
+url:         "https://Sebas-Manti.github.io"
+
+# ── Contact & social ──────────────────────────────────────────────────────────
+# Fill in your handles (leave blank to hide a link)
+email:              "j.s.c.zuluaga@gmail.com"
+github_username:    "Sebas-Manti"
+orcid:              ""          # e.g. 0000-0001-2345-6789
+linkedin_username:  ""          # e.g. sebastian-mantilla
+instagram_username: ""          # e.g. sebas.manti
+bluesky_handle:     ""          # e.g. sebas-manti.bsky.social
+
+# ── Build ─────────────────────────────────────────────────────────────────────
+markdown:    kramdown
+highlighter: rouge
+permalink:   /blog/:year/:month/:day/:title/
+
+kramdown:
+  input:       GFM
+  math_engine: mathjax
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ── Exclude from build ────────────────────────────────────────────────────────
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - vendor/
+  - node_modules/

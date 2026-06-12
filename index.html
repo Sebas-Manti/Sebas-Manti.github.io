@@ -1,0 +1,68 @@
+---
+layout: default
+title: Home
+---
+<div class="container">
+
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="home-hero">
+    <h1 class="home-hero__name">{{ site.title }}</h1>
+    <p class="home-hero__tagline">{{ site.tagline }}</p>
+    <p class="home-hero__about">
+      Mathematician working on stochastic partial differential equations.
+      This site is where I write about mathematics, share projects, and
+      collect things I find interesting.
+      <!-- ↑ Replace with your own words -->
+    </p>
+    <div class="home-hero__social">
+      {% if site.email %}
+      <a href="mailto:{{ site.email }}" class="social-pill">Email</a>
+      {% endif %}
+      {% if site.orcid %}
+      <a href="https://orcid.org/{{ site.orcid }}" class="social-pill" target="_blank" rel="noopener noreferrer">ORCID</a>
+      {% endif %}
+      {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" class="social-pill" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {% endif %}
+      {% if site.linkedin_username %}
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="social-pill" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      {% endif %}
+      {% if site.instagram_username %}
+      <a href="https://instagram.com/{{ site.instagram_username }}" class="social-pill" target="_blank" rel="noopener noreferrer">Instagram</a>
+      {% endif %}
+      {% if site.bluesky_handle %}
+      <a href="https://bsky.app/profile/{{ site.bluesky_handle }}" class="social-pill" target="_blank" rel="noopener noreferrer">Bluesky</a>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- ── Recent posts ──────────────────────────────────────────── -->
+  <section>
+    <h2 class="section-heading">Recent posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:6 %}
+      <li class="post-list__item">
+        <span class="post-list__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="post-list__content">
+          <p class="post-list__title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% assign t = post.post_type | default: 'text' %}
+            {% if t == 'video' %}
+              <span class="type-badge type-badge--video">Video</span>
+            {% elsif t == 'project' %}
+              <span class="type-badge type-badge--project">Project</span>
+            {% else %}
+              <span class="type-badge type-badge--text">Note</span>
+            {% endif %}
+          </p>
+          {% if post.excerpt %}
+          <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ '/blog' | relative_url }}" class="all-posts-link">All posts →</a>
+  </section>
+
+</div>
