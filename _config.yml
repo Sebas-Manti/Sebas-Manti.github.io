@@ -1,4 +1,4 @@
-title:       "Sebastián Mantilla Zuluaga"
+title:       "Sebastian Mantilla Manzano"
 tagline:     "Mathematician — Stochastic PDEs"
 description: "Personal site and blog. Mathematics, stochastic PDEs, and things I find interesting."
 baseurl:     ""
@@ -6,12 +6,12 @@ url:         "https://Sebas-Manti.github.io"
 
 # ── Contact & social ──────────────────────────────────────────────────────────
 # Fill in your handles (leave blank to hide a link)
-email:              "j.s.c.zuluaga@gmail.com"
+email:              "contact.sebas.manti@gmail.com"
 github_username:    "Sebas-Manti"
-orcid:              ""          # e.g. 0000-0001-2345-6789
-linkedin_username:  ""          # e.g. sebastian-mantilla
-instagram_username: ""          # e.g. sebas.manti
-bluesky_handle:     ""          # e.g. sebas-manti.bsky.social
+orcid:              "https://orcid.org/0009-0001-4956-040X"          
+linkedin_username:  "https://www.linkedin.com/in/sebastian-mantilla/"          
+instagram_username: "https://www.instagram.com/sebastian_manti/"          
+bluesky_handle:     "https://bsky.app/profile/sebas-manti.bsky.social"
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 markdown:    kramdown
